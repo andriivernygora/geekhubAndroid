@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context=".HobbyActivity">
+
+    <ImageView
+        android:id="@+id/hobbyCats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:adjustViewBounds = "true"
+        android:layout_marginTop="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cats_hobby" />
+
+    <TextView
+        android:id="@+id/txtHobby"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hobby"
+        android:textSize="40sp"
+        android:layout_marginBottom="25sp"
+        android:layout_marginTop="55sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        android:gravity="center"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobbyCats" />
+
+    <TextView
+        android:id="@+id/hobby1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:text="@string/hobbyList1"
+        android:textSize="25sp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_blue_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHobby" />
+
+    <TextView
+        android:id="@+id/hobby2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hobbyList2"
+        android:textSize="25sp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobby1" />
+
+    <TextView
+        android:id="@+id/hobby3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hobbyList3"
+        android:textSize="25sp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobby2" />
+
+    <TextView
+        android:id="@+id/hobby4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hobbyList4"
+        android:textSize="25sp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_orange_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobby3" />
+
+    <TextView
+        android:id="@+id/hobby5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hobbyList5"
+        android:textSize="25sp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_green_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobby4" />
+
+    <TextView
+        android:id="@+id/hobby6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hobbyList6"
+        android:textSize="25sp"
+        android:textColor="@android:color/background_light"
+        android:background="@android:color/holo_red_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hobby5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

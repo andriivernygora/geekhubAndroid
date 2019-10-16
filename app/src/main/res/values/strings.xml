@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Homework_0</string>
+    <string name="cats_life_description">Something about Cats</string>
+    <string name="hobby">HOBBY</string>
+    <string name="hobbyList1">1. Bottle-cap collecting</string>
+    <string name="hobbyList2">2. Hot yoga</string>
+    <string name="hobbyList3">3. Wicker arts</string>
+    <string name="hobbyList4">4. Litter designs</string>
+    <string name="hobbyList5">5. Angry Tai Chi</string>
+    <string name="hobbyList6">6. Chess</string>
+</resources>
