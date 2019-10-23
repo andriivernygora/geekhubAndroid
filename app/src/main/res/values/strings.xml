@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Homework_1</string>
+    <string name="inputName">Please enter a name:</string>
+    <string name="hintCatName">Cat name</string>
+    <string name="submitCat">Submit</string>
+    <string name="catName">My cat\'s name is</string>
+    <string name="pirateName">Pirate</string>
+    <string name="batmanName">Batman</string>
+    <string name="vikingName">Viking</string>
+    <string name="email">Email</string>
+</resources>
