@@ -31,9 +31,10 @@ public class CatActivity extends AppCompatActivity implements View.OnClickListen
         btnViking.setOnClickListener(this);
 
         Intent intent = getIntent();
-        String name = intent.getStringExtra(KEY_NAME_CAT);
-
-        CatName.setText("My cat\'s name is " + name);
+        if (intent.hasExtra(KEY_NAME_CAT)) {
+            String name = intent.getStringExtra(KEY_NAME_CAT);
+            CatName.setText("My cat\'s name is " + name);
+        }
     }
 
     @Override
