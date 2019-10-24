@@ -16,6 +16,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     final int REQUEST_CODE_IMAGE = 1;
+    final String KEY_NAME_CAT = "nameCat";
+    final String KEY_IMAGE = "image";
     EditText CatName;
     Button btnCat, btnEmail;
     LinearLayout Linear;
@@ -39,8 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onActivityResult(requestCode, resultCode, data);
 
         Log.d("myLogs", "requestCode = " + requestCode + ", resultCode = " + resultCode);
-        if (resultCode == RESULT_OK) {
-            int backgroundImage = data.getIntExtra("image", Color.WHITE);
+
+        if (resultCode == RESULT_OK && requestCode == REQUEST_CODE_IMAGE && data != null) {
+            int backgroundImage = data.getIntExtra(KEY_IMAGE, Color.WHITE);
             Linear.setBackground(getResources().getDrawable(backgroundImage, getApplicationContext().getTheme()));
         } else {
             Toast.makeText(MainActivity.this, "Wrong result", Toast.LENGTH_SHORT).show();
@@ -55,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     Toast.makeText(MainActivity.this, "Please input name", Toast.LENGTH_SHORT).show();
                 } else {
                     Intent intent = new Intent(MainActivity.this, CatActivity.class);
-                    intent.putExtra("nameCat", CatName.getText().toString());
+                    intent.putExtra(KEY_NAME_CAT, CatName.getText().toString());
                     startActivityForResult(intent, REQUEST_CODE_IMAGE);
                 }
                 break;

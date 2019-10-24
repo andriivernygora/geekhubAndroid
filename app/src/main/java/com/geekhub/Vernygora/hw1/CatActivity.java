@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 public class CatActivity extends AppCompatActivity implements View.OnClickListener {
 
+    final String KEY_NAME_CAT = "nameCat";
+    final String KEY_IMAGE = "image";
     Button btnPirate, btnBatman, btnViking;
     TextView CatName;
 
@@ -29,7 +31,7 @@ public class CatActivity extends AppCompatActivity implements View.OnClickListen
         btnViking.setOnClickListener(this);
 
         Intent intent = getIntent();
-        String name = intent.getStringExtra("nameCat");
+        String name = intent.getStringExtra(KEY_NAME_CAT);
 
         CatName.setText("My cat\'s name is " + name);
     }
@@ -39,13 +41,13 @@ public class CatActivity extends AppCompatActivity implements View.OnClickListen
         Intent intent = new Intent();
         switch (v.getId()){
             case R.id.pirateName:
-                intent.putExtra("image", R.drawable.cat_pirate);
+                intent.putExtra(KEY_IMAGE, R.drawable.cat_pirate);
                 break;
             case R.id.batmanName:
-                intent.putExtra("image", R.drawable.cat_batman);
+                intent.putExtra(KEY_IMAGE, R.drawable.cat_batman);
                 break;
             case R.id.vikingName:
-                intent.putExtra("image", R.drawable.cat_viking);
+                intent.putExtra(KEY_IMAGE, R.drawable.cat_viking);
                 break;
         }
         setResult(RESULT_OK, intent);
