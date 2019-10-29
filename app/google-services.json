@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1075785139642",
+    "firebase_url": "https://homework1-70d08.firebaseio.com",
+    "project_id": "homework1-70d08",
+    "storage_bucket": "homework1-70d08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075785139642:android:322068ceed1b4bd893c983",
+        "android_client_info": {
+          "package_name": "com.geekhub.Vernygora.hw1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075785139642-ob015r5244hs3miaujonht4vfq4i62jm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAO-03G9ioSE7ngO4qHrn-fyZXgcOfYLls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1075785139642-ob015r5244hs3miaujonht4vfq4i62jm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
