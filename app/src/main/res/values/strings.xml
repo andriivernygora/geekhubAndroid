@@ -25,4 +25,28 @@
         <item>South Korea</item>
 
     </string-array>
+
+    <string-array name="countriesImage">
+        <item>hungary_1</item>
+        <item>china_2</item>
+        <item>germany_3</item>
+        <item>france_4</item>
+        <item>japan_5</item>
+        <item>australia_6</item>
+        <item>usa_7</item>
+        <item>india_8</item>
+        <item>italy_9</item>
+        <item>england_10</item>
+        <item>uae_11</item>
+        <item>switzerland_12</item>
+        <item>france_13</item>
+        <item>usa_14</item>
+        <item>sweden_15</item>
+        <item>greece_16</item>
+        <item>italy_17</item>
+        <item>ukraine_18</item>
+        <item>portugal_19</item>
+        <item>south_korea_20</item>
+
+    </string-array>
 </resources>
